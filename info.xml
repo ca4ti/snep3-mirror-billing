@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ * Descritor do módulo Log User.
+ *
+ * @copyright Copyright (c) 2014 OpenS Tecnologia
+ * @author Tiago Zimmermann
+
+-->
+
+<billing>
+    <name>Billing</name>
+    <description>Módulo de Tarifação do Snep</description>
+    <version>1.0</version>
+    <author>OpenS Tecnologia</author>
+    <website>www.sneplivre.com.br</website>
+</billing>

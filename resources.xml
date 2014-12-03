@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ * Descritor do módulo Charging.
+ *
+ * @copyright Copyright (c) 2014 OpenS Tecnologia
+ * @author Tiago Zimmermann
+
+-->
+
+<billing>
+    <group id="billing" label="Billing">
+    	<resource id="carrier" label="Carrier">
+            <resource id="write"></resource>
+        </resource>
+        <resource id="billing" label="Billing">
+            <resource id="write"></resource>
+        </resource>
+    </group>
+</billing>
