@@ -56,6 +56,7 @@ class Billing_Manager {
       $db = Zend_Registry::get('db');
 
       $insert_data = array(
+        "created" => date("Y-m-d H:i:s"),
         "area" => $bill['area'],
         "type" => $bill['billtype'],
         "price" => $bill['price'],
@@ -248,6 +249,7 @@ class Billing_Manager {
         $price = self::calculatePrice($bill['billsec'],$rate);
 
         $insert_data = array(
+          "date" => date('Y-m-d H:i:s'),
           "uniqueid" => $bill['uniqueid'],
           "userfield" => $bill['userfield'],
           "price" => $price

@@ -34,6 +34,7 @@ class Telcos_Manager {
       $db = Zend_Registry::get('db');
 
       $insert_data = array(
+        "created" => date('Y-m-d H:i:s'),
         "name" => $telco['name'],
         "mobile_price" => $telco['mobile_price'],
         "landline_price" => $telco['landline_price'],
