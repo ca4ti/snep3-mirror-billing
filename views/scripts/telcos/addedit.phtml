@@ -11,25 +11,25 @@
         <div class="form-group">
             <label class="col-sm-2 control-label"><?php echo $this->translate("Default Mobile Price");?></label>
             <div class="col-sm-1">
-                <input type="text" class="form-control" name="mobile_price" value="<?php echo $this->telco['mobile_price'];?>" />
+                <input type="text" class="form-control" name="mobile_price" placeholder="0,00" value="<?php echo $this->telco['mobile_price'];?>" />
             </div>
         </div>
         <div class="form-group">
             <label class="col-sm-2 control-label"><?php echo $this->translate("Default Land Line Price");?></label>
             <div class="col-sm-1">
-                <input type="text" class="form-control" name="landline_price" value="<?php echo $this->telco['landline_price'];?>" />
+                <input type="text" class="form-control" name="landline_price" placeholder="0,00" value="<?php echo $this->telco['landline_price'];?>" />
             </div>
         </div>
         <div class="form-group">
             <label class="col-sm-2 control-label"><?php echo $this->translate("Start Time Rate (in seconds)");?></label>
             <div class="col-sm-1">
-                <input type="text" class="form-control" name="start_time" value="<?php echo $this->telco['start_time'];?>" />
+                <input type="text" class="form-control" name="start_time" placeholder="30" value="<?php echo $this->telco['start_time'];?>" />
             </div>
         </div>
         <div class="form-group">
             <label class="col-sm-2 control-label"><?php echo $this->translate("Rate Fractionation (in seconds)");?></label>
             <div class="col-sm-1">
-                <input type="text" class="form-control" name="fract" value="<?php echo $this->telco['fract'];?>" />
+                <input type="text" class="form-control" name="fract" placeholder="6" value="<?php echo $this->telco['fract'];?>" />
             </div>
         </div>
         <div class="snep-body-footer-buttons">
