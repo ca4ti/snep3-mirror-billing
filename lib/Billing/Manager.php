@@ -290,10 +290,12 @@ class Billing_Manager {
 
       if($billsec <= $rate['start_time']){
         $result = abs($rate['price'] / 60 * $rate['start_time']);
+        $result = sprintf("%3.3f",$result);
         return str_replace('.',',',$result);
       }
 
       $result = abs($rate['price'] / 60 * $billsec);
+      $result = sprintf("%3.3f",$result);
       return str_replace('.',',',$result);
 
     }
