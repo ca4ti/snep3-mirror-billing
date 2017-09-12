@@ -225,7 +225,7 @@ class Billing_Manager {
 
           $phone = self::checkPhoneNumber($bill['phone']);
 
-          if (isset($phone['area']) && ($phone['area'] != 'local') && (count($telco) > 0)) {
+          if (isset($phone['area']) && (count($telco) > 0)) {
             if(preg_match("/^[2-5]/",$phone['phone'])){
               $type = 2;
             }else{
