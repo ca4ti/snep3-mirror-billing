@@ -345,9 +345,8 @@ class Billing_Manager {
     public function checkPhoneNumber($number){
       $size = strlen($number);
       $fn = substr($number,0,1);
-      if(($size > 10) && ($size < 13) && ($fn == 0)){
-        $area = substr($number,1,2);
-        $phone = substr($number,3);
+      if(($size > 10) && ($size <= 13) && ($fn == 0)){
+        $area = substr($number,3,2);350         $phone = substr($number,3);
         $result = array("area" => $area, "phone" => $phone);
       }elseif (($size > 10) && ($size < 13)) {
         $area = substr($number,0,2);
